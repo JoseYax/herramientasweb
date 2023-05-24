@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap" rel="stylesheet">
+	<style>
+        .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      color: #73C6B6;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .navbar a:hover {
+      background-color: #73C6B6;
+      color: black;
+
+    }
+
+    .navbar .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .navbar .dropdown .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #1D8348;
+      width: 200px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .navbar .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Estilos para la marquesina */
+    .marquee {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      background-color: yellow;
+    }
+
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee 15s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(-100%, 0); }
+    }
+
+    body {
+
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    }
+
+    a {
+    font-family: 'Dancing Script', cursive;
+      } 
+
+    table {
+
+    width: 70%;
+    border-collapse: collapse;
+    background-color: gray;
+
+    }
+
+    thead {
+    background-color: yellow;
+    font-family: 'Rubik Puddles', cursive;
+    }
+
+    th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid black;
+    }
+
+    th{
+
+    font-family: 'Rubik Puddles', cursive;
+
+    }
+
+    td{
+
+    font-family: 'Dancing Script', cursive;
+
+    color: aqua;
+    }
+
+    tbody tr:nth-child(even) {
+    background-color: gray;
+    }
+
+    tbody tr:hover {
+    background-color: orangered;
+    }
+
+    .table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    }
+
+     h1{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    border: 10px solid yellow;
+    text-align: center;
+    }
+
+    p{
+    text-align: center;
+    padding-left: 10px;
+    color: #73C6B6;
+    background:black ;
+    }
+
+
+
+  </style>
+	<title>⚡ Ventas de Herramientas Eléctricas ⚡</title>
+</head>
+<body background="../img/fondo.jpg">
+	<div class="navbar">
+    <a href="../index.html">Inicio</a>
+    <ul>
+    <li><a href="Prov.html">Proveedores</a></li>
+    <li><a href="">Clientes</a></li>
+    </ul>
+    
+    <div class="dropdown">
+      	<a href="javascript:void(0)">Contacto</a>
+    <div class="dropdown-content">
+        <a href="#maps">Mapas</a>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.947025359004!2d-90.51595322409814!3d14.658947785834405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a209e1ffbfdd%3A0x12b0303b26e4ecd6!2sUniversidad%20Mariano%20G%C3%A1lvez%20de%20Guatemala!5e0!3m2!1ses-419!2sgt!4v1684302462321!5m2!1ses-419!2sgt" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a href="email.html">E-mail</a>
+    </div>
+      </div>
+    </div>
+
+
+  <!-- Marquesina -->
+  <div class="marquee">
+    <span>José Miguel Yax Vásquez / 0901-23-15250</span>
+  </div>
+
+  <!-- Contenido de la página -->
+  <h1 id="inicio"> ⚡ Conoce sobre nuestros amados clientes ⚡ </h1>
+  <center>
+  <p>Lista de nuestros clientes más fieles.</p>
+  </center>
+  <div class="table-contaniner">
+  <center>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Correo electrónico</th>
+        <th>Telefono</th>
+        <th>Dirección</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Cage</td>
+        <td>johncage@example.com</td>
+        <td>4759-7689</td>
+        <td>Zona 4 de mixco</td>
+
+      </tr>
+      <tr>
+        <td>Jane</td>
+        <td>Smith</td>
+        <td>janesmith@example.com</td>
+        <td>3869-9345</td>
+        <td>Zona 12 petapa</td>
+      </tr>
+      <tr>
+        <td>David</td>
+        <td>Johnson</td>
+        <td>davidjohnson@example.com</td>
+        <td>0101-4356</td>
+        <td>Zona 16 Cayála</td>
+      </tr>
+    </tbody>
+  </table>
+  </center>
+  </div>
+</body>
+</html>

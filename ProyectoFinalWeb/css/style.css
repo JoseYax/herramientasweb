@@ -1,0 +1,185 @@
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      color: #73C6B6;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .navbar a:hover {
+      background-color: #73C6B6;
+      color: black;
+
+    }
+
+    .navbar .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .navbar .dropdown .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #1D8348;
+      width: 200px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .navbar .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Estilos para la marquesina */
+    .marquee {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      background-color: yellow;
+    }
+
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee 15s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(-100%, 0); }
+    }
+    
+  body {
+
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  }
+
+.producto {
+  width: 100px; /* Cambia el ancho según tus necesidades */
+  height: auto; /* La altura se ajustará automáticamente según el contenido */
+  padding-left: 100px;
+}
+
+.producto img {
+  max-width: 40%; /* Asegura que la imagen se ajuste al contenedor */
+  height: auto; /* La altura se ajustará automáticamente según el ancho máximo */
+  padding-left: 100px;  
+
+}
+
+.contenedor-productos {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias filas si es necesario */
+  justify-content: flex-start; /* Alinea los elementos a la izquierda */
+   border: 10px solid #D5DA00 ;
+   background-color: #003399 ;
+}
+
+.producto {
+  width: 300px;
+  /* Ajusta otros estilos según tus necesidades */
+}
+
+p{
+  text-align: center;
+  padding-left: 10px;
+  color: #73C6B6;
+
+   }
+
+ h1{
+  font-family: 'Dancing Script', cursive;
+  color: white;
+  border: 10px solid yellow;
+  text-align: center;
+ }
+
+
+h2{
+  text-align: center;
+  padding-left: 10px;
+  color: #BA4A00;
+  /*border: 10px solid #003399;*/
+  border: 5px solid  #003399;
+  background: black;
+  font-family: 'Rubik Puddles', cursive;
+
+}
+
+h3{
+  text-align: center;
+  background-color: black;
+  color: #BA4A00;
+ font-family: 'Rubik Puddles', cursive;
+ box-align: center;
+}
+
+.buttons{
+  min-width: 700px;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.buttons a {
+  text-decoration: none;
+  font-size: 28px;
+  width: 60ox;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: blue;
+  color: red;
+  border-radius: 50%;
+
+}
+
+a{
+  font-family: 'Dancing Script', cursive;
+}
+
+.centered {
+  text-align: justify;
+  width: 600px;
+  background-color: black;
+  border: 10px solid #003399;
+}
+
+.social{
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border:10px solid yellow;
+  background: #003399;
+
+}
+.social li{
+  display: inline-block;
+}
+
+.seguir{
+  font-family: 'Dancing Script', cursive;
+}
+
+.info{
+  width: 600px;
+  border: 10px solid #003399;
+}
+
+.accesorios{
+  border: 10px solid #003399;
+  background: black;
+  width: 500px;
+}
+
+footer{
+  border: 5px solid transparent;
+  background: #003399;
+}
